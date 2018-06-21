@@ -5,11 +5,15 @@
         <access>package_private</access>
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
         <action_query>false</action_query>
+        <action_run_at/>
         <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
+        <application/>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>change_task</collection>
@@ -20,8 +24,10 @@
         <is_rest>false</is_rest>
         <message/>
         <name>PushRfC</name>
+        <onclick/>
         <order>100</order>
         <priority>100</priority>
+        <read_access_action>false</read_access_action>
         <rest_method/>
         <rest_method_text/>
         <rest_service/>
@@ -36,10 +42,10 @@ function sleep(ms) {
 
 (function executeRule(current, previous) {
   (function createRfc() {
-    if (current.short_description != 'Implement') {return;}
+    if (current.short_description != 'Implement Change') {return;}
     var change_request = current.parent.getRefRecord();
     var CatalogParams = JSON.parse(change_request.implementation_plan);
-    //gs.info("PARSED: "+JSON.stringify(CatalogParams));
+    // gs.info("PARSED: "+JSON.stringify(CatalogParams));
     if (!CatalogParams) {return;}
     
     var ams_account = new GlideRecord('x_195647_ams_ams_accounts');
@@ -55,12 +61,12 @@ function sleep(ms) {
     // Build RFC structure into params object.
     var params = CatalogParams.RfcParameters;
     if (change_request.start_date) {
-      params.RequestedStartTime = String(change_request.start_date).replace(" ", "T");
+      params.RequestedStartTime = String(change_request.start_date).replace(" ", "T").replace(/[-:]/g, "") + "Z";	
     } else {
       params.RequestedStartTime = '';
     }
     if (change_request.end_date) {
-      params.RequestedEndTime = String(change_request.end_date).replace(" ", "T");
+      params.RequestedEndTime = String(change_request.end_date).replace(" ", "T").replace(/[-:]/g, "") + "Z";
     }
     else {
       params.RequestedEndTime = '';
@@ -147,20 +153,20 @@ function sleep(ms) {
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-19 11:20:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>899076754fa9130081de224f9310c7be</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>PushRfC</sys_name>
         <sys_overrides/>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sys_script_899076754fa9130081de224f9310c7be</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-25 07:49:18</sys_updated_on>
+        <sys_updated_by>e77487</sys_updated_by>
+        <sys_updated_on>2018-06-21 13:03:45</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=899076754fa9130081de224f9310c7be"/>
 </record_update>

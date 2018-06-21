@@ -7,11 +7,13 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-02-25 23:09:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6ec69841db2813004becfabdbf961965</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ScriptableRESTMessageClient.setQueryParameter</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sys_scope_privilege_6ec69841db2813004becfabdbf961965</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

@@ -48,11 +48,13 @@
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-23 12:34:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a6962fc74f61130081de224f9310c7db</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>General Guidance</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sc_cat_item_a6962fc74f61130081de224f9310c7db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

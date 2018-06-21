@@ -7,7 +7,7 @@
         <delivery_plan/>
         <delivery_time>1970-01-02 00:00:00</delivery_time>
         <generation_script/>
-        <group display_value="Software" name="Software">8a4dde73c6112278017a6a4baf547aa7</group>
+        <group display_value="">8a4dde73c6112278017a6a4baf547aa7</group>
         <instructions/>
         <name>Provide Service</name>
         <order>200</order>
@@ -16,11 +16,13 @@
         <sys_class_name>sc_cat_item_delivery_task</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-23 12:36:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8568eb0b4f61130081de224f9310c703</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Provide Service</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sc_cat_item_delivery_task_8568eb0b4f61130081de224f9310c703</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

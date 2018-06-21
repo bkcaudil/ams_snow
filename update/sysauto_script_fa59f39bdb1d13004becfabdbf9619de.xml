@@ -5,7 +5,7 @@
         <condition/>
         <conditional>false</conditional>
         <name>IngestChangeTypes</name>
-        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as display_value="">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -27,11 +27,13 @@ if (ams_account.next()) {
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-11 22:13:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fa59f39bdb1d13004becfabdbf9619de</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>IngestChangeTypes</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sysauto_script_fa59f39bdb1d13004becfabdbf9619de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

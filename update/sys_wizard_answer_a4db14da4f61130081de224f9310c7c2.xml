@@ -10,17 +10,19 @@
         <next_question/>
         <order>100</order>
         <payload_name/>
-        <question display_value="Change Request" name="Change Request">8db4a378c611227401b96457a060e0f4</question>
+        <question display_value="Change Request Models " name="Change Request Models ">8db4a378c611227401b96457a060e0f4</question>
         <roles/>
         <script/>
         <sys_class_name>sys_wizard_answer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-20 13:49:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a4db14da4f61130081de224f9310c7c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Direct to AMS Change</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sys_wizard_answer_a4db14da4f61130081de224f9310c7c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
