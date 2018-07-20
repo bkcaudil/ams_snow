@@ -36,7 +36,8 @@ function setIncidentState(incident, incident_case, ams_incident, ams_account) {
     //var incident = ams_incident.incident.getRefRecord();
     switch(incident_case.status) {
         case 'unassigned':
-            incident.state = 1;
+            incident.state = 15;
+			incident.comments = 'Ticket needs to be re-routed.';
             break;
         case 'work-in-progress':
             incident.state = 2;
@@ -200,15 +201,15 @@ gs.include('AMSIncidentAPI');
         <sys_created_on>2018-03-12 13:28:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c0916fa1db3013004becfabdbf961933</sys_id>
-        <sys_mod_count>260</sys_mod_count>
+        <sys_mod_count>261</sys_mod_count>
         <sys_name>UpdateAMSIncident</sys_name>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sysauto_script_c0916fa1db3013004becfabdbf961933</sys_update_name>
-        <sys_updated_by>abel.tuter</sys_updated_by>
-        <sys_updated_on>2018-04-24 05:58:51</sys_updated_on>
+        <sys_updated_by>e77487</sys_updated_by>
+        <sys_updated_on>2018-07-20 18:54:20</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
