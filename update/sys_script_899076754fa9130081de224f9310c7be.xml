@@ -61,12 +61,12 @@ function sleep(ms) {
     // Build RFC structure into params object.
     var params = CatalogParams.RfcParameters;
     if (change_request.start_date) {
-      params.RequestedStartTime = String(change_request.start_date).replace(" ", "T").replace(/[-:]/g, "") + "Z";	
+      params.RequestedStartTime = String(change_request.start_date).replace(" ", "T") + "Z";	
     } else {
       params.RequestedStartTime = '';
     }
     if (change_request.end_date) {
-      params.RequestedEndTime = String(change_request.end_date).replace(" ", "T").replace(/[-:]/g, "") + "Z";
+      params.RequestedEndTime = String(change_request.end_date).replace(" ", "T") + "Z";
     }
     else {
       params.RequestedEndTime = '';
@@ -158,7 +158,7 @@ function sleep(ms) {
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>899076754fa9130081de224f9310c7be</sys_id>
-        <sys_mod_count>80</sys_mod_count>
+        <sys_mod_count>88</sys_mod_count>
         <sys_name>PushRfC</sys_name>
         <sys_overrides/>
         <sys_package display_value="AMS" source="x_195647_ams">8bd5ffa8db6c13004becfabdbf96194f</sys_package>
@@ -167,7 +167,7 @@ function sleep(ms) {
         <sys_scope display_value="AMS">8bd5ffa8db6c13004becfabdbf96194f</sys_scope>
         <sys_update_name>sys_script_899076754fa9130081de224f9310c7be</sys_update_name>
         <sys_updated_by>e77487</sys_updated_by>
-        <sys_updated_on>2018-06-26 13:04:02</sys_updated_on>
+        <sys_updated_on>2018-07-26 13:15:21</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
